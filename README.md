@@ -1,6 +1,6 @@
-# innoVets Website
+# InnoVet Website
 
-A beautiful, modern, and accessible website for innoVets - an innovative veterinary organization dedicated to providing exceptional animal healthcare to the community.
+A beautiful, modern, and accessible website for InnoVet - Think, Act, Grow - an innovative veterinary organization dedicated to providing exceptional animal healthcare to the community.
 
 ## Features
 
@@ -128,12 +128,16 @@ Potential features that could be added:
 
 ## Contact Information
 
-For questions about this website or innoVets services:
-- **Phone**: (555) 123-4567
+For questions about this website or InnoVet services:
+- **Phone**: (555) 123-4567  
 - **Emergency**: (555) 911-PETS
-- **Email**: info@innovets.com
+- **Email**: info@innovet.com
 - **Address**: 123 Pet Care Avenue, Community City, CC 12345
+
+## About InnoVet
+
+InnoVet is the leading provider of sustainable research-based innovations for the animal industry. We are a club dedicated to thinking innovatively, acting with purpose, and growing together as a community.
 
 ---
 
-*This website was designed with ❤️ for animal welfare and community accessibility.*
+*This website was designed with ❤️ for animal welfare and community accessibility by InnoVet - Think, Act, Grow.*
