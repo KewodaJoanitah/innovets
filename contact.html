@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact InnoVet - Get in touch for appointments, emergencies, and information">
+    <title>Contact Us | InnoVet - Think, Act, Grow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.svg" alt="InnoVet Logo" class="logo-image">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="activities.html" class="nav-link">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="team.html" class="nav-link">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Ready to provide the best care for your beloved pets</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-page">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>We're here to help you and your pets. Reach out to us through any of the methods below.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>123 Pet Care Avenue<br>Community City, CC 12345</p>
+                            <a href="#" class="contact-link">Get Directions</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>Main: <a href="tel:555-123-4567">(555) 123-4567</a><br>
+                            Emergency: <a href="tel:555-911-PETS" class="emergency-link">(555) 911-PETS</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>General: <a href="mailto:info@innovet.com">info@innovet.com</a><br>
+                            Emergency: <a href="mailto:emergency@innovet.com">emergency@innovet.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 8:00 PM<br>
+                            Saturday - Sunday: 9:00 AM - 6:00 PM<br>
+                            <span class="emergency-hours">Emergency: 24/7</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Your Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Needed *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select Service</option>
+                                    <option value="general">General Check-up</option>
+                                    <option value="emergency">Emergency</option>
+                                    <option value="surgery">Surgery Consultation</option>
+                                    <option value="grooming">Grooming</option>
+                                    <option value="vaccination">Vaccination</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pet-info">Pet Information</label>
+                            <input type="text" id="pet-info" name="pet-info" placeholder="Pet name, species, breed, age">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Please describe your pet's needs or any questions you have" rows="5"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for pet care tips and updates
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Banner -->
+    <section class="emergency-banner">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-text">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Emergency?</h2>
+                    <p>If your pet is experiencing a medical emergency, don't wait. Call us immediately or bring your pet to our clinic.</p>
+                </div>
+                <div class="emergency-actions">
+                    <a href="tel:555-911-PETS" class="btn emergency-btn">
+                        <i class="fas fa-phone"></i>
+                        Call Emergency: (555) 911-PETS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours -->
+    <section class="location-hours">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Visit Our Clinic</h3>
+                        <p>123 Pet Care Avenue<br>Community City, CC 12345</p>
+                        <a href="#" class="map-link">View on Google Maps</a>
+                    </div>
+                </div>
+                <div class="hours-info">
+                    <h3>Clinic Hours</h3>
+                    <div class="hours-schedule">
+                        <div class="day-hours">
+                            <span class="day">Monday - Friday</span>
+                            <span class="hours">8:00 AM - 8:00 PM</span>
+                        </div>
+                        <div class="day-hours">
+                            <span class="day">Saturday</span>
+                            <span class="hours">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="day-hours">
+                            <span class="day">Sunday</span>
+                            <span class="hours">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="day-hours emergency">
+                            <span class="day">Emergency</span>
+                            <span class="hours">24/7 Available</span>
+                        </div>
+                    </div>
+                    
+                    <div class="parking-info">
+                        <h4><i class="fas fa-parking"></i> Parking</h4>
+                        <p>Free parking available in front and behind the building. Handicap accessible spaces available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do I need an appointment?</h3>
+                    <p>We recommend scheduling appointments for routine care. Walk-ins are welcome for emergencies and urgent care needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What should I bring to my first visit?</h3>
+                    <p>Please bring your pet's vaccination records, any medications they're currently taking, and a list of questions or concerns.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you accept pet insurance?</h3>
+                    <p>Yes, we work with most major pet insurance providers. We can help you submit claims and understand your coverage.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept cash, credit cards, debit cards, and CareCredit. Payment plans are available for larger procedures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="InnoVet Logo" class="footer-logo-image">
+                    </div>
+                    <p>Think, Act, Grow - Innovative veterinary care for your beloved companions. Making quality animal healthcare accessible to every community through thoughtful innovation and compassionate action.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">General Wellness</a></li>
+                        <li><a href="services.html">Emergency Care</a></li>
+                        <li><a href="services.html">Surgery</a></li>
+                        <li><a href="services.html">Mobile Clinic</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Pet Care Avenue</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@innovet.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Emergency</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InnoVet. All rights reserved. | Think, Act, Grow - Designed with ❤️ for animal welfare</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
