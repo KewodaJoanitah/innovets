@@ -125,9 +125,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: 
-        linear-gradient(135deg, rgba(102, 126, 234, 0.4) 0%, rgba(118, 75, 162, 0.4) 100%),
-        url('image1.webp') center/cover no-repeat;
+    background: url('image1.webp') center/cover no-repeat;
     color: white;
     padding: 120px 0 80px;
     min-height: 100vh;
@@ -144,7 +142,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.2) 100%);
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -196,12 +195,12 @@ body {
 }
 
 .btn-primary {
-    background: #2563eb;
+    background: #fbbf24;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
+    background: #f59e0b;
     transform: translateY(-2px);
 }
 
@@ -217,9 +216,9 @@ body {
 }
 
 .hero-card {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(165, 214, 167, 0.25);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(165, 214, 167, 0.4);
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
@@ -229,7 +228,7 @@ body {
 
 .hero-card:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(165, 214, 167, 0.35);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
@@ -761,11 +760,21 @@ section {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
+    overflow: hidden; /* clip photo to circle */
 }
 
 .team-image i {
     font-size: 2rem;
     color: white;
+}
+
+/* Ensure inline photos fill the circular avatar */
+.team-image .team-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
 }
 
 .team-card h3 {
@@ -1051,7 +1060,7 @@ section {
 
 /* Emergency Banner */
 .emergency-banner {
-    background: linear-gradient(135deg, #ef4444, #dc2626);
+    background: linear-gradient(135deg, #A5D6A7, #A5D6A7);
     color: white;
     padding: 3rem 0;
 }
